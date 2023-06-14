@@ -62,7 +62,6 @@ align-items: center;
 justify-content: space-between;
 }
 
-
 /* 0px-767px */
 @media screen and (max-width: 767px) {
 .nav-list {
@@ -87,14 +86,15 @@ max-width: 1158px;
 }
 
 
-
-
 /* -------Momile-menu----- */
 .mobile-menu_container {
-    position: relative;
-    padding-left: 40px;
-    padding-top: 80px;
-    padding-bottom: 40px;
+position: relative;
+padding-left: 40px;
+padding-top: 80px;
+padding-bottom: 40px;
+display: flex;
+flex-direction: column;
+height: 100%;
 }
 
 .icon {
@@ -115,44 +115,69 @@ z-index: 1000;
 top: 0;
 left: 0;
 background-color: var(--page-background-color);
+opacity: 0;
+visibility: hidden;
+pointer-events: none;
+transition: opacity 500ms linear, visibility 500ms linear;
+}
+
+.mobile-menu.is-open {
+opacity: 1;
+visibility: visible;
+pointer-events: auto;
 }
 
 .mobile-menu_close-btn {
-    position: absolute;
-    top: 24px;
-    right: 24px;
-    background-color: transparent;
-    border: none;
-    padding: 0;
-    line-height: 0;
+position: absolute;
+top: 24px;
+right: 24px;
+background-color: transparent;
+border: none;
+padding: 0;
+line-height: 0;
 }
 
 .nav-list-mob {
-    display: flex;
-    flex-direction: column;
-    gap: 40px;   
-    color: var(--title-text-color); 
+display: flex;
+flex-direction: column;
+gap: 40px;   
 }
 
 .nav-link-mob {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.11;
-    letter-spacing: 0.02em;
-
-    color: var(--title-text-color);  
+font-weight: 700;
+font-size: 36px;
+line-height: 1.11;
+letter-spacing: 0.02em;
+color: var(--title-text-color);  
 }
 
+@media screen and (max-width: 320px) {
+.nav-link-mob {
+font-size: 24px;
+}
+}
 
-.nav-lint-mob:hover,
-.nav-lint-mob:focus {
-    color: var(--nav-color);
+.nav-link-mob:hover,
+.nav-link-mob:focus,
+.nav-link-mob.current {
+color: var(--nav-color);
 }
 
 .nav-bottom {
-    display: flex;
-    justify-content: flex-end;
+margin-top: auto;
+width: 100%;
 }
+
+.item-mob-mail {
+margin-top: 40px;
+margin-bottom: 48px;
+}
+
+.mail-link-mob {
+color: var(--primary-text-color);
+}
+
+
 /* -------Momile-menu----- */
 
 
