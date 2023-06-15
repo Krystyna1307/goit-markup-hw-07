@@ -68,7 +68,6 @@ display: none;
 display: none;
 }
 }
-
 @media screen and (min-width: 768px) {
 .container {
 max-width: 766px;
@@ -77,7 +76,6 @@ max-width: 766px;
 .mobile-menu-open {
 display: none;
 }
-
 .nav-list,
 .nav-link {
 font-weight: 500;
@@ -102,9 +100,6 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 .nav-list .item:not(:last-child) {
 margin-right: 40px;
 }
-/* .address-list .item:not(:last-child) {
-margin-right: 40px;
-} */
 .nav-list .link:hover,
 .nav-list .link:focus,
 .address .link:hover,
@@ -120,7 +115,7 @@ font-size: 12px;
 line-height: 1.17;
 letter-spacing: 0.04em;
 color: var(--primary-text-color);
-/* padding-bottom: 24px; */
+padding-bottom: 24px;
 }
 .mail-tab {
 margin-bottom: 12px;
@@ -145,8 +140,13 @@ border-radius: 2px;
 .nav-link.current::after {
 transform: scaleX(1);
 }
+.link {
+text-decoration: none;    
 }
-
+.list{
+list-style: none;
+}
+}
 @media screen and (min-width: 1158px) {
 .container {
 max-width: 1158px;
@@ -172,7 +172,6 @@ margin-left: auto;
 display: flex;
 }
 }
-
 /* -------Momile-menu----- */
 @media screen and (max-width: 767px) {
 .mobile-menu_container {
@@ -284,88 +283,9 @@ padding-bottom: 24px;
 margin-right: 76px;
 color: var(--accent-color);
 }
-.link {
-text-decoration: none;    
-}
-.list{
-list-style: none;
-}
 .header .accent {
 color: var(--title-text-color);
 }
-
-/* .nav-list {
-font-weight: 500;
-font-size: 16px;
-line-height: 1.5;
-letter-spacing: 0.02em;
-color: var(--title-text-color);
-display: flex;
-} */
-
-/* .nav-link {
-font-weight: 500;
-font-size: 16px;
-line-height: 1.5;
-letter-spacing: 0.02em;
-color: var(--title-text-color);
-display: flex;
-padding-top: 24px;
-padding-bottom: 24px;
-position: relative;
-} */
-
-/* .tel,
-.nav-link  {
-transition-property: color;
-transition-duration: 250ms;
-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); 
-} */
-
-
-/* .nav-list .link:hover,
-.nav-list .link:focus,
-.address .link:hover,
-.address .link:focus,
-.nav-link.current,
-.tel {
-color: var(--nav-color);   
-} */
-
-/* .nav-link::after {
-content: "";
-position: absolute;
-left: 0;
-bottom: -1px;
-transform: scaleX(0);
-width: 100%;
-height: 4px;
-background-color: var(--nav-color);
-border-radius: 2px;
-} */
-
-/* .nav-link:hover::after,
-.nav-link:focus::after,
-.nav-link.current::after {
-transform: scaleX(1);
-} */
-
-
-/* .tel {
-font-family: 'Roboto', sans-serif;
-font-weight: 400;
-font-size: 16px;
-line-height: 1.5;
-letter-spacing: 0.02em;
-color: var(--primary-text-color);
-padding-bottom: 24px;
-} */
-
-
-
-
-
-
 
 
 /* ----------------HERO---------- */
