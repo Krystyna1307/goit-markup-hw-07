@@ -474,9 +474,12 @@ margin-bottom: 8px;
 /* --------what are we doing------------------------ */
 
 /* від 0 до 1157 */
-@media screen and (max-width: 1157px) {
+@media screen and (max-width: 1158px) {
 .doing-section {
 display: none;
+}
+.doing {
+max-width: 1158px;
 }
 }
 
@@ -496,17 +499,13 @@ text-transform: capitalize;
 margin-bottom: 72px;
 color: var(--title-text-color);
 }
-.employees-card {
-flex-basis: calc((100%-48px) /3 ); 
-} 
+
 
 
 /* -------------Our team----------------- */
 /* mobile------- */
 .mobile-team {
-width: 100%;
-padding-left: 15px;
-padding-right: 15px;
+max-width: 294px;
 }
 .team {
 background-color: #F4F4FD;
@@ -560,9 +559,15 @@ background-color: #404bbf;
 /* tablet----our team */
 
 @media screen and (min-width: 768px) {
-/* .team-name {
-width: 264px;
-} */
+.mobile-team {
+max-width: 582px;
+}
+}
+
+@media screen and (min-width: 1158px) {
+.mobile-team {
+max-width: 1158px;
+}
 }
 
 /* tablet----our team */
