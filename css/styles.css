@@ -173,7 +173,8 @@ display: flex;
 }
 }
 /* -------Momile-menu----- */
-@media screen and (max-width: 767px) {
+
+@media screen and (max-width: 768px) {
 .mobile-menu_container {
 position: relative;
 padding-left: 40px;
@@ -233,7 +234,14 @@ color: var(--title-text-color);
 }
 }
 
-@media screen and (max-width: 320px) {
+/* @media screen and (max-width: 320px) {
+.nav-link-mob {
+font-size: 24px;
+}
+} */
+
+
+@media screen and (max-width: 408px) {
 .nav-link-mob {
 font-size: 24px;
 }
